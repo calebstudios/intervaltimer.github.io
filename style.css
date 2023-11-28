@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6; /* Lighter background to enhance contrast */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+#timer {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border: 2px solid #555; /* Darker border for better contrast */
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+}
+
+label {
+    display: block;
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Spacing before the input fields */
+}
+
+input[type=number] {
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #666; /* Darker border for inputs for better visibility */
+    font-size: 22px; /* Larger font size for input fields */
+    text-align: center;
+    background-color: #f8f8f8; /* Slightly off-white background for the inputs */
+}
+
+button {
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Keep the primary action color for buttons */
+    color: white;
+    border: none;
+    font-size: 22px; /* Larger font for buttons for better visibility */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker on hover for feedback */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    input[type=number], button {
+        font-size: 24px; /* Slightly larger font size for smaller devices */
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    body, #timer {
+        font-size: 20px;
+    }
+
+    input[type=number], button {
+        padding: 20px;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    button {
+        padding: 25px 50px;
+    }
+
+    input[type=number] {
+        width: 100px;
+    }
+}
